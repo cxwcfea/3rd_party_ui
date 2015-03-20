@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的账户</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/css.css"/>
+		<script src="../js/jquery-1.11.0.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				$("#jq_tableBox tr:even td").css("background","#f5f5f5")//表格隔行换色
+				$("#jq_tableBox2 tr:even td").css("background","#f5f5f5")//表格隔行换色
+				$("#jq_tableBox3 tr:even td").css("background","#f5f5f5")//表格隔行换色
+				
+				$("#tableMenu li").click(function () {
+					var index =$(this).index();
+					$(this).addClass("select").siblings().removeClass("select");
+					$("#tableMain>div").eq(index).show().siblings().hide();
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="Top">
+			<div class="wrapper">
+				<div class="fl color_c82217">客服热线：</div>
+				<div class="fl color_c82217 TopPhone">400-692-1388</div>
+				<div class="fr">
+					<a href="index.html" class="color_333333">请登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" class="color_333333">免费注册</a>&nbsp;&nbsp;<a href="#">帮助中心</a> <a href="#">客服中心</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="header">
+			<div class="wrapper">
+				<a href="#" class="logo"><img src="../images/logo.png"/></a>
+				<ul class="nav fr">
+					<li><a href="#">天天牛</a></li>
+					<li><a href="#">免费体验</a></li>
+					<li class="select"><a href="#">我的账户</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="wrapper paddTop30">
+			<div class="LeftMenu fl">
+				<ul>
+					<li><a href="#" class="LiIcon01 select">我的操盘</a></li>
+					<li><a href="#" class="LiIcon02 ">资金管理</a></li>
+					<li class="select"><a href="#" class="LiIcon03">我的账户</a></li>
+				</ul>
+			</div>
+			<div class="fr RightMain">
+				<div class="moneyBox">
+					<div class="moneyBoxLeft fl">
+						<p class="p01">账户余额：</p>
+						<p class="p02 color_f2991b">￥<span>132,789.45</span></p>
+						<p class="p03">其中冻结100,000元，可用32,789.45元</p>
+						<p class="p04">
+							<a href="#" class="btn01 marRight10">充值</a>
+							<a href="#" class="btn02">提现</a>
+						</p>
+					</div>
+					<div class="moneyBoxRight fl">
+						<p class="p01">当前操盘总金额：</p>
+						<p class="p02 color_c82217">￥<span>32,789.45</span></p>
+						<p class="p03">包含3笔操盘资金</p>
+						<p class="p04">
+							<a href="#" class="btn03 ">新增配资 </a>
+						</p>
+					</div>
+				</div>
+				<div class="tableMenu">
+					<ul id="tableMenu">
+						<li class="select">全部</li>
+						<li>当前操盘</li>
+						<li>已结算</li>
+					</ul>
+					<a href="#" class="a01"></a>
+					<div class="searchBox fr">
+						<input type="text" class="searchInputText" name="" id="" value="" placeholder="输入充值金额/业务单号搜索" />						
+						<input type="button" name="" class="searchBtn" id="" value="搜索" />
+					</div>
+				</div>
+				<div class="tableMain" id="tableMain">
+					<div class="tableBox" id="jq_tableBox">
+						<table>
+							<tr>
+								<th>业务单号</th>
+								<th>操盘金额/保证金额</th>
+								<th>操盘时长/申请时间</th>
+								<th>状态</th>
+								<th>操作</th>
+							</tr>
+							<tr>
+								<td>00000001</td>
+								<td>128万/5万</td>
+								<td>1个月/2015.01.30</td>
+								<td class="color_c82217">操盘中</td>
+								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+							</tr>
+							<tr>
+								<td>00000001</td>
+								<td>28万/5万</td>
+								<td>4个月/2015.01.30</td>
+								<td class="color_f2991b">结算中</td>
+								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+							</tr>
+							<tr>
+								<td>00000001</td>
+								<td>28万/5万</td>
+								<td>4个月/2015.01.30</td>
+								<td class="color_f2991b">结算中</td>
+								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+							</tr>
+							<tr>
+								<td>00000001</td>
+								<td>28万/5万</td>
+								<td>4个月/2015.01.30</td>
+								<td>已结算</td>
+								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+							</tr>
+							<tr>
+								<td>00000001</td>
+								<td>28万/5万</td>
+								<td>4个月/2015.01.30</td>
+								<td>已结算</td>
+								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+							</tr>
+							<tr>
+								<td>00000001</td>
+								<td>28万/5万</td>
+								<td>4个月/2015.01.30</td>
+								<td>已结算</td>
+								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+							</tr>
+						</table>
+						<div class="tablePageBox">
+							<input type="button" name="" id="" value="GO" class="pageBtn" />
+							<div class="fr">&nbsp;页&nbsp;</div>
+							<input type="text" name="" id="" value="1" class="pageInputText" /> 
+							<div class="fr">&nbsp;第&nbsp;</div>
+							<div class="fr tablePage">
+								<a href="#">&lt;</a>
+								<span>1</span>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#">&gt;</a>
+							</div>
+							
+						</div>
+					</div>
+					<div class="tableBox undis"  id="jq_tableBox2">
+						<table>
+							<tr>
+								<th>业务单号</th>
+								<th>操盘金额/保证金额</th>
+								<th>操盘时长/申请时间</th>
+								<th>状态</th>
+								<th>操作</th>
+							</tr>
+							<tr>
+								<td>000001</td>
+								<td>38万/5万</td>
+								<td>22个月/2015.01.30</td>
+								<td class="color_c82217">操盘中</td>
+								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+							</tr>
+							<tr>
+								<td>00000001</td>
+								<td>28万/5万</td>
+								<td>4个月/2015.01.30</td>
+								<td class="color_f2991b">结算中</td>
+								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+							</tr>
+							<tr>
+								<td>00000001</td>
+								<td>28万/5万</td>
+								<td>4个月/2015.01.30</td>
+								<td class="color_f2991b">结算中</td>
+								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+							</tr>
+							<tr>
+								<td>00000001</td>
+								<td>28万/5万</td>
+								<td>4个月/2015.01.30</td>
+								<td>已结算</td>
+								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+							</tr>
+							<tr>
+								<td>00000001</td>
+								<td>28万/5万</td>
+								<td>4个月/2015.01.30</td>
+								<td>已结算</td>
+								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+							</tr>
+							<tr>
+								<td>00000001</td>
+								<td>28万/5万</td>
+								<td>4个月/2015.01.30</td>
+								<td>已结算</td>
+								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+							</tr>
+						</table>
+						<div class="tablePageBox">
+							<input type="button" name="" id="" value="GO" class="pageBtn" />
+							<div class="fr">&nbsp;页&nbsp;</div>
+							<input type="text" name="" id="" value="1" class="pageInputText" /> 
+							<div class="fr">&nbsp;第&nbsp;</div>
+							<div class="fr tablePage">
+								<a href="#">&lt;</a>
+								<span>1</span>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#">&gt;</a>
+							</div>
+							
+						</div>
+					</div>
+					<div class="tableBox undis" id="jq_tableBox3">
+						<table>
+							<tr>
+								<th>业务单号</th>
+								<th>操盘金额/保证金额</th>
+								<th>操盘时长/申请时间</th>
+								<th>状态</th>
+								<th>操作</th>
+							</tr>
+							<tr>
+								<td>5000001</td>
+								<td>21万/5万</td>
+								<td>11个月/2015.01.30</td>
+								<td class="color_c82217">操盘中</td>
+								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+							</tr>
+							<tr>
+								<td>00000001</td>
+								<td>28万/5万</td>
+								<td>4个月/2015.01.30</td>
+								<td class="color_f2991b">结算中</td>
+								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+							</tr>
+							<tr>
+								<td>00000001</td>
+								<td>28万/5万</td>
+								<td>4个月/2015.01.30</td>
+								<td class="color_f2991b">结算中</td>
+								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+							</tr>
+							<tr>
+								<td>00000001</td>
+								<td>28万/5万</td>
+								<td>4个月/2015.01.30</td>
+								<td>已结算</td>
+								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+							</tr>
+							<tr>
+								<td>00000001</td>
+								<td>28万/5万</td>
+								<td>4个月/2015.01.30</td>
+								<td>已结算</td>
+								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+							</tr>
+							<tr>
+								<td>00000001</td>
+								<td>28万/5万</td>
+								<td>4个月/2015.01.30</td>
+								<td>已结算</td>
+								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+							</tr>
+						</table>
+						<div class="tablePageBox">
+							<input type="button" name="" id="" value="GO" class="pageBtn" />
+							<div class="fr">&nbsp;页&nbsp;</div>
+							<input type="text" name="" id="" value="1" class="pageInputText" /> 
+							<div class="fr">&nbsp;第&nbsp;</div>
+							<div class="fr tablePage">
+								<a href="#">&lt;</a>
+								<span>1</span>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#">&gt;</a>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="footer">
+			<div class="wrapper">
+				<div class="footerList fl">
+					<p>软件下载</p>
+					<ul>
+						<li><span class="icon02">&nbsp;</span><a href="#">Windows版</a></li>
+						<li><span class="icon03">&nbsp;</span><a href="#">iOS版</a></li>
+						<li><span class="icon04">&nbsp;</span><a href="#">Android版</a></li>
+					</ul>
+				</div>
+				<div class="footerList fl">
+					<p>操盘问题</p>
+					<ul>
+						<li><a href="#">操盘流程</a></li>
+						<li><a href="#">法律保障</a></li>
+						<li><a href="#">常见问题</a></li>
+					</ul>
+				</div>
+				<div class="footerList fl">
+					<p>关于牛金网</p>
+					<ul>
+						<li><a href="#">公司介绍</a></li>
+						<li><a href="#">合作伙伴</a></li>
+						<li><a href="#">联系方式</a></li>
+					</ul>
+				</div>
+				<div class="fr ewmBox">
+					<p><span>&nbsp;</span>官方微信</p>
+					<img src="../images/img15.jpg"/>
+				</div>
+				<div class="fr phoneBox">
+					<p class="p01">全国服务热线</p>
+					<p class="p02">400-692-1388</p>
+					<p class="p03">QQ群1:351531<br />QQ群2:131351</p>
+					<div class="icon05"></div>
+					<div class="icon06"></div>
+				</div>
+				<div class="clear"></div>
+				<div class="footerText">©版权所有 北京小牛普惠科技有限公司 All Rights Reserved 2015 <a href="#"> 京ICP备14047091号-4</a></div>
+			</div>
+		</div>
+	</body>
+</html>
