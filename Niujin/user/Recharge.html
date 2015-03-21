@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>充值</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/css.css"/>
+		<script src="../js/jquery-1.11.0.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				$("#menu span").click(function () {
+					var index =$(this).index();
+					$(this).addClass("select").siblings().removeClass("select");
+					$("#recMainBox>div").eq(index).show().siblings().hide();
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="Top">
+			<div class="wrapper">
+				<div class="fl color_c82217">客服热线：</div>
+				<div class="fl color_c82217 TopPhone">400-692-1388</div>
+				<div class="fr">
+					<a href="index.html" class="color_333333">请登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" class="color_333333">免费注册</a>&nbsp;&nbsp;<a href="#">帮助中心</a> <a href="#">客服中心</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="header">
+			<div class="wrapper">
+				<a href="#" class="logo"><img src="../images/logo.png"/></a>
+				<ul class="nav fr">
+					<li><a href="../index.html">首页</a></li>
+					<li><a href="../apply/index.html">天天牛</a></li>
+					<li><a href="../free_apply/index.html">免费体验</a></li>
+					<li class="select"><a href="index.html">我的账户</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="wrapper paddTop30">
+			<div class="LeftMenu fl">
+				<ul>
+					<li><a href="index.html" class="LiIcon01 select">我的操盘</a>
+					<li class="select"><a href="orders.html" class="LiIcon02 ">资金管理</a></li>
+					<li><a href="user.html" class="LiIcon03">我的账户</a></li>
+				</ul>
+			</div>
+			<div class="fr RightMain">
+				<div class="rightMenu">
+					<ul>
+						<li class="select"><a href="Recharge.html">充值</a></li>
+						<li><a href="withdraw.html">提现</a></li>
+						<li><a href="orders.html">资金流水</a></li>
+						<li><a href="card.html">我的银行卡</a></li>
+					</ul>
+				</div>
+				<div class="recTop"><a href="#">查看充值记录></a></div>
+				<div class="recMenuBox" id="">
+					<div class="fl">
+						选择充值方式：
+					</div>
+					<div class="fl" id="menu">
+						<span class="select">网银充值</span>
+						<span>支付宝</span>
+						<span>银行汇款</span>
+					</div>
+				</div>
+				<div class="recMainBox" id="recMainBox">
+					<div class="wyRec ">
+						<div class="recMoneyBox">
+							<div class="recMoneyLeft fl">
+								<div class="recMoneyText">
+									充值金额：
+									<input type="text" name="" id="" value="" />
+									元
+								</div>
+								<p class="p01">&nbsp;当前充值相关的业务单号：000000001，操盘12万元，至少还需要支付19452元（1万9千4百52元）！</p>
+							</div>
+							<div class="fl recMoneyRight">
+								<p class="p01">当前可用余额为：</p>
+								<p class="p02">￥<span>89</span>.45</p>
+								<p class="p03">其中冻结100,000元，可用32,789.45元</p>
+							</div>
+						</div>
+						<p class="recP02">请选择在线支付的银行卡</p>
+						<div class="yhList">
+							<ul>
+								<li>
+									<label>
+										<input type="radio" name="yh" id="" value="" />
+										<span><img src="../images/yh/icbc.png"/></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="yh" id="" value="" />
+										<span><img src="../images/yh/abc.png"/></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="yh" id="" value="" />
+										<span><img src="../images/yh/ccb.png"/></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="yh" id="" value="" />
+										<span><img src="../images/yh/psbc.png"/></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="yh" id="" value="" />
+										<span><img src="../images/yh/boc.png"/></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="yh" id="" value="" />
+										<span><img src="../images/yh/bcs.png"/></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="yh" id="" value="" />
+										<span><img src="../images/yh/cmb.png"/></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="yh" id="" value="" />
+										<span><img src="../images/yh/cgb.png"/></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="yh" id="" value="" />
+										<span><img src="../images/yh/ceb.png"/></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="yh" id="" value="" />
+										<span><img src="../images/yh/cib.png"/></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="yh" id="" value="" />
+										<span><img src="../images/yh/bob.png"/></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="yh" id="" value="" />
+										<span><img src="../images/yh/spdb.png"/></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="yh" id="" value="" />
+										<span><img src="../images/yh/cmbc.png"/></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="yh" id="" value="" />
+										<span><img src="../images/yh/ecitic.png"/></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="yh" id="" value="" />
+										<span><img src="../images/yh/hx-2.png"/></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="yh" id="" value="" />
+										<span><img src="../images/yh/pa.png"/></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="yh" id="" value="" />
+										<span><img src="../images/yh/hzyh.png"/></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="yh" id="" value="" />
+										<span><img src="../images/yh/nbcb.png"/></span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="yh" id="" value="" />
+										<span><img src="../images/yh/bos.png"/></span>
+									</label>
+								</li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+						<p class="recP03">温馨提示：<br />如果没有适合您的网银，可以通过线下汇款支付</p>
+						<a href="#" class="recBtn01">下一步</a>
+					</div>
+					<div class="wyRec undis">
+						<div class="recMoneyBox">
+							<div class="recMoneyLeft fl">
+								<div class="recMoneyText">
+									充值金额：
+									<input type="text" name="" id="" value="" />
+									元
+								</div>
+								<p class="p01">&nbsp;当前充值相关的业务单号：000000001，操盘12万元，至少还需要支付19452元（1万9千4百52元）！</p>
+							</div>
+							<div class="fl recMoneyRight">
+								<p class="p01">当前可用余额为：</p>
+								<p class="p02">￥<span>89</span>.45</p>
+								<p class="p03">其中冻结100,000元，可用32,789.45元</p>
+							</div>
+						</div>
+						<div class="yhList marTop25">
+							<ul>
+								<li>
+									<label>
+										<input checked="checked" type="radio" name="yh" id="" value="" />
+										<span><img src="../images/yh/zfb.png"/></span>
+									</label>
+								</li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+						<p class="recP03">温馨提示：<br />如果没有适合您的网银，可以通过线下汇款支付</p>
+						<a href="#" class="recBtn01">下一步</a>
+					</div>
+					<div class="wyRec undis">
+						<div class="recMoneyBox">
+							<div class="recMoneyLeft fl">
+								<div class="fl recYhLeft">
+									<p class="p02">您可以汇款给牛金</p>
+									<img src="../images/yh/icbc.png"/>
+								</div>
+								<div class="recText fl">
+									<p class="p03">账号：<span class="fb">1234 1234 1234 1232 123</span></p>
+									<p>开户行：<span class="fb">中国工商银行 北京知春路支行</span>   </p>
+									<p>户名：<span class="fb">习大大</span></p>
+								</div>
+							</div>
+							<div class="fl recMoneyRight">
+								<p class="p04">将转账相关信息发送到我的手机</p>
+								<a href="#" class="recBtn02">发送到手机</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="footer marTop200">
+			<div class="wrapper">
+				<div class="footerList fl">
+					<p>软件下载</p>
+					<ul>
+						<li><span class="icon02">&nbsp;</span><a href="#">Windows版</a></li>
+						<li><span class="icon03">&nbsp;</span><a href="#">iOS版</a></li>
+						<li><span class="icon04">&nbsp;</span><a href="#">Android版</a></li>
+					</ul>
+				</div>
+				<div class="footerList fl">
+					<p>操盘问题</p>
+					<ul>
+						<li><a href="#">操盘流程</a></li>
+						<li><a href="#">法律保障</a></li>
+						<li><a href="#">常见问题</a></li>
+					</ul>
+				</div>
+				<div class="footerList fl">
+					<p>关于牛金网</p>
+					<ul>
+						<li><a href="#">公司介绍</a></li>
+						<li><a href="#">合作伙伴</a></li>
+						<li><a href="#">联系方式</a></li>
+					</ul>
+				</div>
+				<div class="fr ewmBox">
+					<p><span>&nbsp;</span>官方微信</p>
+					<img src="../images/img15.jpg"/>
+				</div>
+				<div class="fr phoneBox">
+					<p class="p01">全国服务热线</p>
+					<p class="p02">400-692-1388</p>
+					<p class="p03">QQ群1:351531<br />QQ群2:131351</p>
+					<div class="icon05"></div>
+					<div class="icon06"></div>
+				</div>
+				<div class="clear"></div>
+				<div class="footerText">©版权所有 北京小牛普惠科技有限公司 All Rights Reserved 2015 <a href="#"> 京ICP备14047091号-4</a></div>
+			</div>
+		</div>
+	</body>
+</html>

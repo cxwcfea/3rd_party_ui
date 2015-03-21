@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>我的账户</title>
+		<title>资金流水</title>
 		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/css.css"/>
 		<script src="../js/jquery-1.11.0.js"></script>
@@ -46,46 +46,34 @@
 		<div class="wrapper paddTop30">
 			<div class="LeftMenu fl">
 				<ul>
-					<li class="select"><a href="index.html" class="LiIcon01 select">我的操盘</a></li>
-					<li><a href="orders.html" class="LiIcon02 ">资金管理</a></li>
+					<li><a href="index.html" class="LiIcon01 select">我的操盘</a>
+					<li class="select"><a href="orders.html" class="LiIcon02 ">资金管理</a></li>
 					<li><a href="user.html" class="LiIcon03">我的账户</a></li>
 				</ul>
 			</div>
 			<div class="fr RightMain">
 				<div class="rightMenu">
 					<ul>
-						<li class="select"><a href="#">操盘总览</a></li>
+						<li><a href="Recharge.html">充值</a></li>
+						<li><a href="withdraw.html">提现</a></li>
+						<li class="select"><a href="orders.html">资金流水</a></li>
+						<li><a href="card.html">我的银行卡</a></li>
 					</ul>
-				</div>
-				<div class="moneyBox">
-					<div class="moneyBoxLeft fl">
-						<p class="p01">账户余额：</p>
-						<p class="p02 color_f2991b">￥<span>132,789.45</span></p>
-						<p class="p03">其中冻结100,000元，可用32,789.45元</p>
-						<p class="p04">
-							<a href="#" class="btn01 marRight10">充值</a>
-							<a href="#" class="btn02">提现</a>
-						</p>
-					</div>
-					<div class="moneyBoxRight fl">
-						<p class="p01">当前操盘总金额：</p>
-						<p class="p02 color_c82217">￥<span>32,789.45</span></p>
-						<p class="p03">包含3笔操盘资金</p>
-						<p class="p04">
-							<a href="#" class="btn03 ">新增配资 </a>
-						</p>
-					</div>
 				</div>
 				<div class="tableMenu">
 					<ul id="tableMenu">
 						<li class="select">全部</li>
-						<li>当前操盘</li>
-						<li>已结算</li>
+						<li>一月内</li>
+						<li>半年内</li>
 					</ul>
-					<a href="#" class="a01"></a>
-					<div class="searchBox fr">
-						<input type="text" class="searchInputText" name="" id="" value="" placeholder="输入充值金额/业务单号搜索" />						
-						<input type="button" name="" class="searchBtn" id="" value="搜索" />
+					<div class="ordhBox fr">
+						<input type="text" class="ordInputText" name="" id="" value="" placeholder="2015.02.10" />						
+						<input type="button" name="" class="searchBtn" id="" value="日历" />
+					</div>
+					<div class="fr">&nbsp;到&nbsp;</div>
+					<div class="ordhBox fr">
+						<input type="text" class="ordInputText" name="" id="" value="" placeholder="2015.02.10" />						
+						<input type="button" name="" class="searchBtn" id="" value="日历" />
 					</div>
 				</div>
 				<div class="tableMain" id="tableMain">
@@ -93,52 +81,59 @@
 						<table>
 							<tr>
 								<th>业务单号</th>
-								<th>操盘金额/保证金额</th>
-								<th>操盘时长/申请时间</th>
+								<th>全部</th>
+								<th>金额变动</th>
+								<th>余额</th>
+								<th>时间</th>
 								<th>状态</th>
-								<th>操作</th>
 							</tr>
 							<tr>
 								<td>00000001</td>
-								<td>128万/5万</td>
-								<td>1个月/2015.01.30</td>
-								<td class="color_c82217">操盘中</td>
-								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+								<td>服务费</td>
+								<td>-4.80</td>
+								<td>123564.80</td>
+								<td>2015.02.03  18:34:25</td>
+								<td class="color_f2991b">处理中</td>
 							</tr>
 							<tr>
 								<td>00000001</td>
-								<td>28万/5万</td>
-								<td>4个月/2015.01.30</td>
-								<td class="color_f2991b">结算中</td>
-								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+								<td>服务费</td>
+								<td>-4.80</td>
+								<td>123564.80</td>
+								<td>2015.02.03  18:34:25</td>
+								<td class="color_f2991b">处理中</td>
 							</tr>
 							<tr>
 								<td>00000001</td>
-								<td>28万/5万</td>
-								<td>4个月/2015.01.30</td>
-								<td class="color_f2991b">结算中</td>
-								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+								<td>服务费</td>
+								<td>-4.80</td>
+								<td>123564.80</td>
+								<td>2015.02.03  18:34:25</td>
+								<td>完成</td>
 							</tr>
 							<tr>
 								<td>00000001</td>
-								<td>28万/5万</td>
-								<td>4个月/2015.01.30</td>
-								<td>已结算</td>
-								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+								<td>服务费</td>
+								<td>-4.80</td>
+								<td>123564.80</td>
+								<td>2015.02.03  18:34:25</td>
+								<td>完成</td>
 							</tr>
 							<tr>
 								<td>00000001</td>
-								<td>28万/5万</td>
-								<td>4个月/2015.01.30</td>
-								<td>已结算</td>
-								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+								<td>服务费</td>
+								<td>-4.80</td>
+								<td>123564.80</td>
+								<td>2015.02.03  18:34:25</td>
+								<td>完成</td>
 							</tr>
 							<tr>
 								<td>00000001</td>
-								<td>28万/5万</td>
-								<td>4个月/2015.01.30</td>
-								<td>已结算</td>
-								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+								<td>服务费</td>
+								<td>-4.80</td>
+								<td>123564.80</td>
+								<td>2015.02.03  18:34:25</td>
+								<td>完成</td>
 							</tr>
 						</table>
 						<div class="tablePageBox">
@@ -160,52 +155,59 @@
 						<table>
 							<tr>
 								<th>业务单号</th>
-								<th>操盘金额/保证金额</th>
-								<th>操盘时长/申请时间</th>
+								<th>全部</th>
+								<th>金额变动</th>
+								<th>余额</th>
+								<th>时间</th>
 								<th>状态</th>
-								<th>操作</th>
-							</tr>
-							<tr>
-								<td>000001</td>
-								<td>38万/5万</td>
-								<td>22个月/2015.01.30</td>
-								<td class="color_c82217">操盘中</td>
-								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
 							</tr>
 							<tr>
 								<td>00000001</td>
-								<td>28万/5万</td>
-								<td>4个月/2015.01.30</td>
-								<td class="color_f2991b">结算中</td>
-								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+								<td>服务费</td>
+								<td>-4.80</td>
+								<td>123564.80</td>
+								<td>2015.02.03  18:34:25</td>
+								<td class="color_f2991b">处理中</td>
 							</tr>
 							<tr>
 								<td>00000001</td>
-								<td>28万/5万</td>
-								<td>4个月/2015.01.30</td>
-								<td class="color_f2991b">结算中</td>
-								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+								<td>服务费</td>
+								<td>-4.80</td>
+								<td>123564.80</td>
+								<td>2015.02.03  18:34:25</td>
+								<td class="color_f2991b">处理中</td>
 							</tr>
 							<tr>
 								<td>00000001</td>
-								<td>28万/5万</td>
-								<td>4个月/2015.01.30</td>
-								<td>已结算</td>
-								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+								<td>服务费</td>
+								<td>-4.80</td>
+								<td>123564.80</td>
+								<td>2015.02.03  18:34:25</td>
+								<td>处理中</td>
 							</tr>
 							<tr>
 								<td>00000001</td>
-								<td>28万/5万</td>
-								<td>4个月/2015.01.30</td>
-								<td>已结算</td>
-								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+								<td>服务费</td>
+								<td>-4.80</td>
+								<td>123564.80</td>
+								<td>2015.02.03  18:34:25</td>
+								<td class="color_f2991b">处理中</td>
 							</tr>
 							<tr>
 								<td>00000001</td>
-								<td>28万/5万</td>
-								<td>4个月/2015.01.30</td>
-								<td>已结算</td>
-								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+								<td>服务费</td>
+								<td>-4.80</td>
+								<td>123564.80</td>
+								<td>2015.02.03  18:34:25</td>
+								<td>处理中</td>
+							</tr>
+							<tr>
+								<td>00000001</td>
+								<td>服务费</td>
+								<td>-4.80</td>
+								<td>123564.80</td>
+								<td>2015.02.03  18:34:25</td>
+								<td>处理中</td>
 							</tr>
 						</table>
 						<div class="tablePageBox">
@@ -227,52 +229,59 @@
 						<table>
 							<tr>
 								<th>业务单号</th>
-								<th>操盘金额/保证金额</th>
-								<th>操盘时长/申请时间</th>
+								<th>全部</th>
+								<th>金额变动</th>
+								<th>余额</th>
+								<th>时间</th>
 								<th>状态</th>
-								<th>操作</th>
-							</tr>
-							<tr>
-								<td>5000001</td>
-								<td>21万/5万</td>
-								<td>11个月/2015.01.30</td>
-								<td class="color_c82217">操盘中</td>
-								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
 							</tr>
 							<tr>
 								<td>00000001</td>
-								<td>28万/5万</td>
-								<td>4个月/2015.01.30</td>
-								<td class="color_f2991b">结算中</td>
-								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+								<td>服务费</td>
+								<td>-4.80</td>
+								<td>123564.80</td>
+								<td>2015.02.03  18:34:25</td>
+								<td>处理中</td>
 							</tr>
 							<tr>
 								<td>00000001</td>
-								<td>28万/5万</td>
-								<td>4个月/2015.01.30</td>
-								<td class="color_f2991b">结算中</td>
-								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+								<td>服务费</td>
+								<td>-4.80</td>
+								<td>123564.80</td>
+								<td>2015.02.03  18:34:25</td>
+								<td>处理中</td>
 							</tr>
 							<tr>
 								<td>00000001</td>
-								<td>28万/5万</td>
-								<td>4个月/2015.01.30</td>
-								<td>已结算</td>
-								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+								<td>服务费</td>
+								<td>-4.80</td>
+								<td>123564.80</td>
+								<td>2015.02.03  18:34:25</td>
+								<td>处理中</td>
 							</tr>
 							<tr>
 								<td>00000001</td>
-								<td>28万/5万</td>
-								<td>4个月/2015.01.30</td>
-								<td>已结算</td>
-								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+								<td>服务费</td>
+								<td>-4.80</td>
+								<td>123564.80</td>
+								<td>2015.02.03  18:34:25</td>
+								<td>处理中</td>
 							</tr>
 							<tr>
 								<td>00000001</td>
-								<td>28万/5万</td>
-								<td>4个月/2015.01.30</td>
-								<td>已结算</td>
-								<td><a href="#">管理</a>  <a href="#">操盘账户</a></td>
+								<td>服务费</td>
+								<td>-4.80</td>
+								<td>123564.80</td>
+								<td>2015.02.03  18:34:25</td>
+								<td>处理中</td>
+							</tr>
+							<tr>
+								<td>00000001</td>
+								<td>服务费</td>
+								<td>-4.80</td>
+								<td>123564.80</td>
+								<td>2015.02.03  18:34:25</td>
+								<td>处理中</td>
 							</tr>
 						</table>
 						<div class="tablePageBox">
@@ -291,10 +300,13 @@
 						</div>
 					</div>
 				</div>
+				
+				
+				
 			</div>
 			<div class="clear"></div>
 		</div>
-		<div class="footer">
+		<div class="footer marTop200">
 			<div class="wrapper">
 				<div class="footerList fl">
 					<p>软件下载</p>
