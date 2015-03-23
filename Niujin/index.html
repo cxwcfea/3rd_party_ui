@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<script src="js/jquery-1.11.0.js"></script>
 		<script src="js/jquery.Imgfocus.js"></script>
+		<script src="js/common.js"></script>
 		<script type="text/javascript">
 			 $(function () {
 	            $("#imgFocus").Carousel({
@@ -51,11 +52,38 @@
 	</head>
 	<body>
 		<div class="Top">
-			<div class="wrapper">
+			<div class="wrapper pr">
 				<div class="fl color_c82217">客服热线：</div>
 				<div class="fl color_c82217 TopPhone">400-692-1388</div>
+				
 				<div class="fr">
-					<a href="index.html" class="color_333333">请登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" class="color_333333">免费注册</a>&nbsp;&nbsp;<a href="#">帮助中心</a> <a href="#">客服中心</a>
+					&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="reg.html" class="color_333333">免费注册</a>&nbsp;&nbsp;
+					<a href="user/Recharge.html">充值中心</a>&nbsp;&nbsp;&nbsp;
+					<a href="help/help.html">帮助中心</a>&nbsp;&nbsp;&nbsp;
+					<a href="help/help.html">客服中心</a>
+				</div>
+				<div class="TopLoginBox fr jq_topLogin">
+					请登录
+					<div class="loginBox topLoginContet jq_LoginBox undis">
+				    	<div class="loginText loginIncon01">
+				    		<input type="text" class="inputLoginText" name="" id="" value="" placeholder="手机号/邮箱" />
+				    	</div>
+				    	<div class="loginText loginIncon02">
+				    		<input type="password" class="inputLoginText" name="" id="" value="" placeholder="密&nbsp;&nbsp;&nbsp;码" />
+				    	</div>
+				    	<div class="loginText2">
+				    		<div class="fl">
+				    			<label>
+				    				<input type="checkbox" name="" id="" value="" />
+				    				保持登录状态
+				    			</label>
+				    		</div>
+				    		<a href="#">忘记密码？</a>
+				    	</div>
+				    	<a href="#" class="LoginBtn01">登陆</a>
+				    	<a href="#" class="LoginBtn02">免费注册</a>
+				    </div>
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -65,9 +93,10 @@
 			<div class="header">
 				<a href="#" class="logo"><img src="images/logo.png"/></a>
 				<ul class="nav fr">
-					<li><a href="#">天天牛</a></li>
+					<li class="select"><a href="index.html">首页</a></li>
+					<li><a href="apply/index.html">天天牛</a></li>
 					<li><a href="free_apply/index.html">免费体验</a></li>
-					<li class="select"><a href="#">我的账户</a></li>
+					<li><a href="user/index.html">我的账户</a></li>
 				</ul>
 			</div>
 		</div>
@@ -191,7 +220,7 @@
 					<div class="qtmoneyBox undis" id="jq_qtmoneyBox">
 						<p class="tc">请输入您的操盘金额</p>
 						<div class="moneyInputBox">
-							<input class="moneyinputText" type="text" name="" id="" value="" placeholder="申请资金必须在1万元至30万元之间" />
+							<input  onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" maxlength="6" class="moneyinputText" type="text" name="" id="" value="" placeholder="申请资金必须在1万元至30万元之间" />
 							<input type="button" name="" id="" value="确定" class="moneyBtn" />
 						</div>
 						<p class="tc"><a href="javascript:" id="return_moneyBox">返回</a></p>
