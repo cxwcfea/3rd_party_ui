@@ -55,14 +55,26 @@
 			<div class="wrapper pr">
 				<div class="fl color_c82217">客服热线：</div>
 				<div class="fl color_c82217 TopPhone">400-692-1388</div>
-				
+				<div class="fr">
+					&nbsp;&nbsp;&nbsp;<a href="help/help.html">帮助中心</a>&nbsp;&nbsp;&nbsp;
+				</div>
+				<div class="fr khdBox jq_khdBox">
+					客户端下载
+					<div class="hhdDown undis">
+						<ul>
+							<li><span class="icon02">&nbsp;</span><a href="#">Windows版</a></li>
+							<!--<li><span class="icon03">&nbsp;</span><a href="#">iOS版</a></li>
+							<li><span class="icon04">&nbsp;</span><a href="#">Android版</a></li>-->
+						</ul>
+					</div>
+				</div>
 				<div class="fr">
 					&nbsp;&nbsp;|&nbsp;&nbsp;
 					<a href="reg.html" class="color_333333">免费注册</a>&nbsp;&nbsp;
 					<a href="user/Recharge.html">充值中心</a>&nbsp;&nbsp;&nbsp;
-					<a href="help/help.html">帮助中心</a>&nbsp;&nbsp;&nbsp;
-					<a href="help/help.html">客服中心</a>
+					
 				</div>
+				
 				<div class="TopLoginBox fr jq_topLogin">
 					请登录
 					<div class="loginBox topLoginContet jq_LoginBox undis">
@@ -81,7 +93,7 @@
 				    		</div>
 				    		<a href="#">忘记密码？</a>
 				    	</div>
-				    	<a href="#" class="LoginBtn01">登陆</a>
+				    	<a href="#" class="LoginBtn01">登录</a>
 				    	<a href="#" class="LoginBtn02">免费注册</a>
 				    </div>
 				</div>
@@ -102,9 +114,9 @@
 		</div>
 		<div class="Banner" id="imgFocus">
 			<ul class="ImgContent" id="ImgContent">
-		        <li style="background-image: url(images/banner.jpg);"></li>
-		        <li style="background-image: url(images/banner2.jpg);"></li>
-		        <li style="background-image: url(images/banner3.jpg);"></li>
+		        <li style="background-image: url(images/banner.jpg);background-color: #e23024;"></li>
+		        <li style="background-image: url(images/banner2.jpg);background-color: #e12f23"></li>
+		        <li style="background-image: url(images/banner3.jpg);background-color: #fd1c48"></li>
 		    </ul>
 		    <div class="wrapper BannerNrBox">
 		    	<ul class="ImgList" id="ImgList">
@@ -218,12 +230,12 @@
 						</li>
 					</ul>
 					<div class="qtmoneyBox undis" id="jq_qtmoneyBox">
-						<p class="tc">请输入您的操盘金额</p>
+						<p class="tc p01">请输入您的操盘金额</p>
 						<div class="moneyInputBox">
 							<input  onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" maxlength="6" class="moneyinputText" type="text" name="" id="" value="" placeholder="申请资金必须在1万元至30万元之间" />
 							<input type="button" name="" id="" value="确定" class="moneyBtn" />
 						</div>
-						<p class="tc"><a href="javascript:" id="return_moneyBox">返回</a></p>
+						<p class="tc p02"><a href="javascript:" id="return_moneyBox">返回</a></p>
 					</div>
 				</div>
 			</div>
@@ -255,10 +267,14 @@
 							<td class="infoTableTitle">账户管理费</td>
 							<td class="infoTableNr"><span class="infoText03">19.9</span>元/每天  <span class="infoText04">（按天收取，周末节假日免费）</span></td>
 						</tr>
+						<tr>
+							<td colspan="2" class="infoTabletd">
+								<p class="tr"><input type="checkbox" name="" id="" value="" />&nbsp;同意<a href="#" class="color_e23024">《牛金操盘协议》</a></p>
+								<input type="button" name="" id="" value="立即操盘" class="infoBtn" onclick="window.location.href='confirm.html'" />
+							</td>
+						</tr>
 					</table>
 				</div>
-				<p class="tr"><input type="checkbox" name="" id="" value="" />&nbsp;同意牛<a href="#" class="color_e23024">《金操盘协议》</a></p>
-				<input type="button" name="" id="" value="立即操盘" class="infoBtn" />
 			</div>
 			<div class="clear"></div>
 			<div class="Division"></div>
