@@ -1957,17 +1957,28 @@ dl.left .submit:hover{
 .slsBox{
 	width: 331px;
 	height: 271px;
-	background: url(../images/404.png) no-repeat;
+	/*background: url(../images/404.png) no-repeat;*/
 	margin: auto;
 	text-align: center;
 	margin-top: 70px;
+	
 }
-
-.slsBox p{
-	padding-top: 200px;
-	color: #0091e4;
-
-}
+.slsBox p.p01{
+		font-size: 90px;
+		color: #da4839;
+		font-weight: bold;
+	}
+.slsBox span.span02{
+		background: #000000;
+		font-size: 18px;
+		color: #fff;
+		font-weight: bold;
+		padding: 5px 15px;
+		
+	}
+	.slsBox p.p02{
+			padding-top: 20px;		
+	}
 .slsBox a{color: #0091e4;}
 
 .am-text-danger{color: #dd514c;}
