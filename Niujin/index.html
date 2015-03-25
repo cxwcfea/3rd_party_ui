@@ -47,6 +47,12 @@
 			    var MyMar=setInterval(Marquee,speed);
 			    tab.onmouseover=function() {clearInterval(MyMar)};//鼠标移上时清除定时器达到滚动停止的目的
 			    tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};//鼠标移开时重设定时器
+			    
+			    
+			    
+			    $(".jq_loginClose").click(function () {
+			    	$(".loginTcc").hide();
+			    })
 	        });
 		</script>
 	</head>
@@ -77,7 +83,35 @@
 				
 				<div class="TopLoginBox fr jq_topLogin">
 					请登录
-					<div class="loginBox topLoginContet jq_LoginBox undis">
+					<div id="login" class="ui-logon clearfix  topLoginContet jq_LoginBox undis">
+						<ul class="logon-con">
+							<li class="title">
+							<h2>登录</h2>
+							</li>
+		 					<li class="err-tips">
+								<div class="ui-err">
+								</div>
+							</li>	
+							
+							<li class="logon-ipt z-index10" id="username1">
+								<em class="user"></em>
+									<input placeholder="请输入注册手机号码" type="text" autocomplete="off" value="" accesskey="n" tabindex="1" class="holder" name="username" id="username">
+							</li>
+							<li class="logon-ipt mgt20" id="pwd">
+								<em class="key"></em>
+								<input type="password" tabindex="2" value="" placeholder="密码" name="password">
+							</li>
+							<li class="ui-pwd">
+		                    	<a href="https://user.658.com/jsp/recoverLoginPwd/recover_login_pwd_1.jsp">忘记密码</a>
+		                	</li>
+		                	                 	 
+							<li>
+								<input type="submit" value="登录" accesskey="l" name="submit" tabindex="4" class="login-btn">
+							</li>
+							<li class="li01" style="">没有账号？ <a style="" href="#" class="register">免费注册</a></li>
+						</ul>
+				</div>
+					<!--<div class="loginBox  undis">
 				    	<div class="loginText loginIncon01">
 				    		<input type="text" class="inputLoginText" name="" id="" value="" placeholder="手机号/邮箱" />
 				    	</div>
@@ -95,7 +129,7 @@
 				    	</div>
 				    	<a href="#" class="LoginBtn01">登录</a>
 				    	<a href="#" class="LoginBtn02">免费注册</a>
-				    </div>
+				    </div>-->
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -423,6 +457,61 @@
 				</div>
 				<div class="clear"></div>
 			</div>
+		</div>
+		<div class="loginTcc">
+			<div class="tmbg"></div>
+			<div id="login" class="ui-logon clearfix logintcc">
+				<div class="loginClose jq_loginClose"></div>
+				<ul class="logon-con">
+					<li class="title">
+					<h2>登录</h2>
+					</li>
+ 					<li class="err-tips">
+						<div class="ui-err">
+						</div>
+					</li>	
+					
+					<li class="logon-ipt z-index10" id="username1">
+						<em class="user"></em>
+							<input placeholder="请输入注册手机号码" type="text" autocomplete="off" value="" accesskey="n" tabindex="1" class="holder" name="username" id="username">
+					</li>
+					<li class="logon-ipt mgt20" id="pwd">
+						<em class="key"></em>
+						<input type="password" tabindex="2" value="" placeholder="密码" name="password">
+					</li>
+					<li class="ui-pwd">
+                    	<a href="https://user.658.com/jsp/recoverLoginPwd/recover_login_pwd_1.jsp">忘记密码</a>
+                	</li>
+                	                 	 
+					<li>
+						<input type="submit" value="登录" accesskey="l" name="submit" tabindex="4" class="login-btn">
+					</li>
+					<li class="li01" style="">没有账号？ <a style="" href="#" class="register">免费注册</a></li>
+				</ul>
+		</div>
+			<!--<div class="loginBox  logintcc">
+				<div class="loginColumn">
+					登陆
+				</div>
+				
+		    	<div class="loginText loginIncon01">
+		    		<input type="text" class="inputLoginText" name="" id="" value="" placeholder="手机号/邮箱" />
+		    	</div>
+		    	<div class="loginText loginIncon02">
+		    		<input type="password" class="inputLoginText" name="" id="" value="" placeholder="密&nbsp;&nbsp;&nbsp;码" />
+		    	</div>
+		    	<div class="loginText2">
+		    		<div class="fl">
+		    			<label>
+		    				<input type="checkbox" name="" id="" value="" />
+		    				保持登录状态
+		    			</label>
+		    		</div>
+		    		<a href="#">忘记密码？</a>
+		    	</div>
+		    	<a href="#" class="LoginBtn01">登录</a>
+		    	<a href="#" class="LoginBtn02">免费注册</a>
+		    </div>-->
 		</div>
 		<div class="footer">
 			<div class="wrapper">

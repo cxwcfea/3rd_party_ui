@@ -7,101 +7,58 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<link rel="stylesheet" type="text/css" href="css/css.css"/>
 		<script src="js/jquery-1.11.0.js"></script>
-		<script src="js/jquery.Imgfocus.js"></script>
 		<script src="js/common.js"></script>
-		<script type="text/javascript">
-			 $(function () {
-	            $("#imgFocus").Carousel({
-	                ImgContentID: "ImgContent", //内容ID;
-	                ImgListClass: "selectLi", //选中状态css;
-	                events: "click", //事件，click为鼠标点击,hover为鼠标滑过;
-	                AutoPlay: true, //自动播放 ，false为不播放;
-	                speed: 5000, //播放速度;
-	                Styles: "opa", //移动形式，default为无，Transverse为横向移动,Vertical为纵向,opa透明度渐隐
-	                mobileSpeed: 500//移动速度;
-	            });
-	        });
-		</script>
+		<style>
+		
+		</style>
 	</head>
-	<body>
-		<div class="Top">
-			<div class="wrapper pr">
-				<div class="fl color_c82217">客服热线：</div>
-				<div class="fl color_c82217 TopPhone">400-692-1388</div>
-				<div class="fr">
-					&nbsp;&nbsp;&nbsp;<a href="help/help.html">帮助中心</a>&nbsp;&nbsp;&nbsp;
-				</div>
-				<div class="fr khdBox jq_khdBox">
-					客户端下载
-					<div class="hhdDown undis">
-						<ul>
-							<li><span class="icon02">&nbsp;</span><a href="#">Windows版</a></li>
-							<!--<li><span class="icon03">&nbsp;</span><a href="#">iOS版</a></li>
-							<li><span class="icon04">&nbsp;</span><a href="#">Android版</a></li>-->
-						</ul>
-					</div>
-				</div>
-				<div class="fr">
-					&nbsp;&nbsp;|&nbsp;&nbsp;
-					<a href="reg.html" class="color_333333">免费注册</a>&nbsp;&nbsp;
-					<a href="user/Recharge.html">充值中心</a>&nbsp;&nbsp;&nbsp;
-					
-				</div>
-				
-				<div class="TopLoginBox fr jq_topLogin">
-					请登录
-					<div class="loginBox topLoginContet jq_LoginBox undis">
-				    	<div class="loginText loginIncon01">
-				    		<input type="text" class="inputLoginText" name="" id="" value="" placeholder="手机号/邮箱" />
-				    	</div>
-				    	<div class="loginText loginIncon02">
-				    		<input type="password" class="inputLoginText" name="" id="" value="" placeholder="密&nbsp;&nbsp;&nbsp;码" />
-				    	</div>
-				    	<div class="loginText2">
-				    		<div class="fl">
-				    			<label>
-				    				<input type="checkbox" name="" id="" value="" />
-				    				保持登录状态
-				    			</label>
-				    		</div>
-				    		<a href="#">忘记密码？</a>
-				    	</div>
-				    	<a href="#" class="LoginBtn01">登录</a>
-				    	<a href="#" class="LoginBtn02">免费注册</a>
-				    </div>
-				</div>
-				<div class="clear"></div>
-			</div>
-			<div class="clear"></div>
-		</div>
+	<body class="bg_fff">
+		
 		<div class="header">
 			<div class="wrapper">
-				<a href="#" class="logo"><img src="images/logo.png"/></a>
-				<ul class="nav fr">
-					<li><a href="index.html">首页</a></li>
-					<li><a href="apply/index.html">天天牛</a></li>
-					<li><a href="free_apply/index.html">免费体验</a></li>
-					<li><a href="user/index.html">我的账户</a></li>
-				</ul>
+				<a href="#" class="logo2"><img src="images/logo.png"/></a>
+				<span class="loginSpan">用户登录</span>
+				<div class="fr headerText">
+    				还不是会员 ？ <a href="#">立即注册</a> | <a href="#">意见反馈</a> 
+				</div>
 			</div>
 		</div>
-		<div class="Banner" id="imgFocus">
-			<ul class="ImgContent" id="ImgContent">
-		        <li style="background-image: url(images/banner.jpg);"></li>
-		        <li style="background-image: url(images/banner2.jpg);"></li>
-		        <li style="background-image: url(images/banner3.jpg);"></li>
-		    </ul>
-		    <div class="wrapper BannerNrBox">
-		    	<ul class="ImgList" id="ImgList">
-			        <li class="selectLi"></li>
-			        <li></li>
-			        <li></li>
-			    </ul>
-			    <div class="loginBox">
-			    	<div class="loginText loginIncon01">
+				
+		<div class="wrapper loginHeight">
+			<div class="loginBg"></div>
+			<div id="login" class="ui-logon clearfix">
+				<ul class="logon-con">
+					<li class="title">
+					<h2>登录</h2>
+					</li>
+ 					<li class="err-tips">
+						<div class="ui-err">
+						</div>
+					</li>	
+					
+					<li class="logon-ipt z-index10" id="username1">
+						<em class="user"></em>
+							<input placeholder="请输入注册手机号码" type="text" autocomplete="off" value="" accesskey="n" tabindex="1" class="holder" name="username" id="username">
+					</li>
+					<li class="logon-ipt mgt20" id="pwd">
+						<em class="key"></em>
+						<input type="password" tabindex="2" value="" placeholder="密码" name="password">
+					</li>
+					<li class="ui-pwd">
+                    	<a href="https://user.658.com/jsp/recoverLoginPwd/recover_login_pwd_1.jsp">忘记密码</a>
+                	</li>
+                	                 	 
+					<li>
+						<input type="submit" value="登录" accesskey="l" name="submit" tabindex="4" class="login-btn">
+					</li>
+					<li class="li01" style="">没有账号？ <a style="" href="#" class="register">免费注册</a></li>
+				</ul>
+		</div>
+			<!--<div class="loginBox loginbox2">
+			    	<div class="loginText loginIncon01 loginText3 ">
 			    		<input type="text" class="inputLoginText" name="" id="" value="" placeholder="手机号/邮箱" />
 			    	</div>
-			    	<div class="loginText loginIncon02">
+			    	<div class="loginText loginIncon02 loginText3">
 			    		<input type="password" class="inputLoginText" name="" id="" value="" placeholder="密&nbsp;&nbsp;&nbsp;码" />
 			    	</div>
 			    	<div class="loginText2">
@@ -115,37 +72,9 @@
 			    	</div>
 			    	<a href="#" class="LoginBtn01">登录</a>
 			    	<a href="#" class="LoginBtn02">免费注册</a>
-			    </div>
-		    </div>
+			    </div>-->
 		</div>
-		<div class="productBox">
-			<div class="wrapper">
-				<div class="product fl">
-					<div class="fl productIcon01"></div>
-					<div class="fl productText">
-						<p class="p01">配资 是件轻松的事</p>
-						<p class="p02">3步操作，3分钟配资，最高30万</p>
-						<p class="p03"><a href="#">免费体验</a> ｜ <a href="#">立即配资</a></p>
-					</div>
-				</div>
-				<div class="product fl productWidth2">
-					<div class="fl productIcon02"></div>
-					<div class="fl productText">
-						<p class="p01">随时随地 随借随还</p>
-						<p class="p02">PC移动微信，随时还款，超低费用</p>
-						<p class="p03"><a href="#">查看费用</a></p>
-					</div>
-				</div>
-				<div class="product productWidth fl">
-					<div class="fl productIcon03"></div>
-					<div class="fl productText">
-						<p class="p01">实盘交易 安心安全</p>
-						<p class="p02">实盘交易保障</p>
-						<p class="p03"><a href="#">免费体验</a> ｜ <a href="#">立即配资</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
+		
 		<div class="footer">
 			<div class="wrapper">
 				<div class="footerList fl">
