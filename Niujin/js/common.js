@@ -21,7 +21,19 @@ $(function () {
 		$(this).find("div").hide();
 		$(this).removeClass("khdBoxSelected")
 	})
+	
+	
+	//登陆框错误提示
+	$(".errorText").click(function () {
+		$(this).hide();
+		$(this).prev("input").focus();
+	})
+	
+	$(".login-btn").click(function () {
+		$(".errorText").show();
+	})
 })
+
 
 
 //复制到剪切板
